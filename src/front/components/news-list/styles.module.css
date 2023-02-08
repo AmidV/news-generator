@@ -1,0 +1,74 @@
+.listBoard {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 15px;
+}
+
+.listBoardCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    max-width: 1070px;
+    border-radius: 20px;
+    padding: 7px;
+    margin-bottom: 30px;
+    background: #dbe2fe;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: ease-in-out 350ms;
+}
+
+.listBoardCard:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.listBoardCardLeft {
+    height: 90%;
+    min-width: 220px;
+    border-right: 1.5px solid #292929;
+}
+
+.listBoardCardRight {
+    min-width: 780px;
+    line-height: 1.6em;
+    padding-right: 40px;
+}
+
+.listBoardCardImage {
+    width: 95%;
+    height: 120px;
+    object-fit: contain;
+    
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+.listBoardCardImageAuthor,
+.listBoardCardArticleLink {
+    text-decoration: none;
+    color: #676767;
+    font-style: italic;
+    transition: color ease-in-out 350ms;
+}
+
+.listBoardCardImageAuthor:hover,
+.listBoardCardArticleLink:hover {
+    color: #292929;
+}
+
+.listBoardCardImageAuthor {
+    font-size: .8em;
+    padding-left: 18px;
+}
+
+
+.listBoardCardTitle {
+    text-decoration: underline;
+}
+
+.topTitle {
+    text-align: center;
+    margin-bottom: 1em;
+}
